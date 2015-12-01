@@ -2469,7 +2469,7 @@ function CREATE_PUBNUB(setup) {
     setup['crypto_obj'] = crypto_obj();
     setup['params']      = { 'pnsdk' : PNSDK }
 
-    SELF = function(setup) {
+    var SELF = function(setup) {
         return CREATE_PUBNUB(setup);
     }
     var PN = PN_API(setup);
